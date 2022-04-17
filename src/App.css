@@ -41,11 +41,6 @@
   display: none;
 }
 
-body{
-  background-color: #282c34;
-  color: azure;
-}
-
 .font-family-public-sans{
   font-family: 'Public Sans';
 }
@@ -55,4 +50,19 @@ body{
   color: white; 
   text-align: center;
   font-family: Public Sans;
+}
+
+.card{
+  text-align: center;
+  color: white;
+  font-family: Public Sans;
+}
+
+.btn{
+  color: white;
+}
+
+.col{
+  display: flex;
+  justify-content: center;
 }

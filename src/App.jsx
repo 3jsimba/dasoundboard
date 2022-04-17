@@ -1,81 +1,74 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import { Card, Button } from 'react-bootstrap';
+import { Howl, Howler } from 'howler';
 
-function App() {
+function App(){
+  const seori = new Howl({
+    src: ['./src/components/sounds/producertag.mp3']
+  });
+
+  RenderButtonAndSound = () => {
+    return audioClips.map((soundObj, index) => {
+      return(
+        <Button key={index} onClick={() => this.playSound(soundObj.sound)}>
+
+        </Button>
+      )
+    })
+
+  }
+  
   return (
     <>
+      <br></br>
       <div className="title">
         <h1>
           Da Soundboard
         </h1>
       </div>
 
+      <br></br><br></br>
+
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">
-                  <i className="fas fa-volume-up"></i>
-                  <span>
-                    Sound 1
-                  </span>
-                </h5>
-                <p className="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque euismod, urna eu tempor consectetur, nisi nunc
-                  lobortis nisl, euismod egestas nisl nunc euismod.
-                </p>
-                <button className="btn btn-primary">
-                  Play
-                </button>
-              </div>
-            </div>
+        
+          <div className= "col">
+            <Card border='white' className='card' style={{ width: '10rem' }}>
+              <Card.Body>
+              <Card.Title>seori</Card.Title>
+              <Card.Text>
+              </Card.Text>
+              <Button onClick={() => seori.play()} variant="dark">play</Button>
+              </Card.Body>
+            </Card> 
           </div>
 
-          <div className="col-md-4">  
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">
-                  <i className="fas fa-volume-up"></i>
-                  <span>
-                    Sound 2
-                  </span>
-                </h5>
-                <p className="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque euismod, urna eu tempor consectetur, nisi nunc
-                  lobortis nisl, euismod egestas nisl nunc euismod.
-                </p>
-                <button className="btn btn-primary">
-                  Play
-                </button>
-              </div>
-            </div>
+          <div className= "col">
+            <Card border='white' className='card' style={{ width: '10rem' }}>
+              <Card.Body>
+              <Card.Title>bruh</Card.Title>
+              <Card.Text>
+              </Card.Text>
+              <Button variant="dark">play</Button>
+              </Card.Body>
+            </Card>
           </div>
           
-          <div className="col-md-4">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">
-                  <i className="fas fa-volume-up"></i>
-                  <span>
-                    Sound 3
-                  </span>
-                </h5>
-                <p className="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque euismod, urna eu tempor consectetur, nisi nunc
-                  lobortis nisl, euismod egestas nisl nunc euismod.
-                </p>
-                <button className="btn btn-primary">
-                  Play
-                </button>
-              </div>
-            </div>
+          <div className= "col">
+            <Card border='white' className='card' style={{ width: '10rem' }}>
+              <Card.Body>
+              <Card.Title>AAUUGGHH</Card.Title>
+              <Card.Text>
+              </Card.Text>
+              <Button variant="dark">play</Button>
+              </Card.Body>
+            </Card>
           </div>
+
         </div>
       </div>
+
     </>
   );
 }
