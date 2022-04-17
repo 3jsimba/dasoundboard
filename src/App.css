@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+body{
+  background-color: #282c34;
+  color: azure;
+}
+
+.font-family-public-sans{
+  font-family: 'Public Sans';
+}
+
+/* center title */
+.title{
+  color: white; 
+  text-align: center;
+  font-family: Public Sans;
+}

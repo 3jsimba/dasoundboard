@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* add publc sans as a font famliy */
+@font-face{
+  font-family: 'Public Sans';
+  src: url('D:\code\daboard\src\components\fonts\publicSans\fonts\ttf\PublicSans-BlackItalic.ttf');
+}
