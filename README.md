@@ -45,4 +45,7 @@ A great thanks to all the open source software that can be used in making person
 Deployment of the working application. Orginially made with 3 sounds, the application is out for use with working plays on the sound.
 
 ### Ver. 1.0.2
-Name fixes.
+Big fixes
+
+### Ver. 1.0.3
+yes

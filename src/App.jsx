@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import { Card, Button } from 'react-bootstrap';
 import { Howl } from 'howler';
@@ -67,7 +67,7 @@ function App(){
       </div>
 
       <footer className='footer'>
-        <p className='footerText'> Verions 1.0.2 </p>
+        <p className='footerText'> Verions 1.0.3 </p>
       </footer>
     </>
   );
