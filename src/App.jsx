@@ -34,7 +34,7 @@ function App(){
           <div className= "col">
             <Card border='white' className='card' style={{ width: '10rem' }}>
               <Card.Body>
-              <Card.Title>seori</Card.Title>
+              <Card.Title>tag</Card.Title>
               <Card.Text>
               </Card.Text>
               <Button onClick={() => seori.play()} variant="dark">play</Button>
@@ -68,7 +68,7 @@ function App(){
       </div>
 
       <footer className='footer'>
-        <p className='footerText'> Verions 1.0.1 </p>
+        <p className='footerText'> Verions 1.0.2 </p>
       </footer>
     </>
   );
