@@ -15,7 +15,6 @@ const AAUUGGHH = new Howl({
   src: ['/sounds/aughhhhh.webm'],
 });
 
-
 function App(){
   return (
     <>
