@@ -15,9 +15,8 @@ const AAUUGGHH = new Howl({
   src: ['/sounds/aughhhhh.webm'],
 });
 
-
 function App(){
-  return (
+  return(
     <>
       <br></br>
       <div className="title">
@@ -68,7 +67,7 @@ function App(){
       </div>
 
       <footer className='footer'>
-        <p className='footerText'> Verions 1.0.2 </p>
+        <p className='footerText'> Verions 1.0.3 </p>
       </footer>
     </>
   );
