@@ -1,24 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import { Card, Button } from 'react-bootstrap';
-import { Howl, Howler } from 'howler';
+import { Howl } from 'howler';
+
+const seori = new Howl({
+  src: ['/sounds/producertag.mp3'],
+});
+
+const tacoBell = new Howl({
+  src: ['/sounds/tacobell.webm'],
+});
+
+const AAUUGGHH = new Howl({
+  src: ['/sounds/aughhhhh.webm'],
+});
+
 
 function App(){
-  const seori = new Howl({
-    src: ['./src/components/sounds/producertag.mp3']
-  });
-
-  RenderButtonAndSound = () => {
-    return audioClips.map((soundObj, index) => {
-      return(
-        <Button key={index} onClick={() => this.playSound(soundObj.sound)}>
-
-        </Button>
-      )
-    })
-
-  }
-  
   return (
     <>
       <br></br>
@@ -47,10 +45,10 @@ function App(){
           <div className= "col">
             <Card border='white' className='card' style={{ width: '10rem' }}>
               <Card.Body>
-              <Card.Title>bruh</Card.Title>
+              <Card.Title>taco bell</Card.Title>
               <Card.Text>
               </Card.Text>
-              <Button variant="dark">play</Button>
+              <Button onClick={() => tacoBell.play()} variant="dark">play</Button>
               </Card.Body>
             </Card>
           </div>
@@ -61,7 +59,7 @@ function App(){
               <Card.Title>AAUUGGHH</Card.Title>
               <Card.Text>
               </Card.Text>
-              <Button variant="dark">play</Button>
+              <Button onClick={() => AAUUGGHH.play()} variant="dark">play</Button>
               </Card.Body>
             </Card>
           </div>
@@ -69,6 +67,9 @@ function App(){
         </div>
       </div>
 
+      <footer className='footer'>
+        <p className='footerText'> Verions 1.0.1 </p>
+      </footer>
     </>
   );
 }

@@ -66,3 +66,11 @@
   display: flex;
   justify-content: center;
 }
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  color: white;
+  font-family: Public Sans;
+  font-size: 0.75rem;
+}
