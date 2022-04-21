@@ -8,11 +8,11 @@ const seori = new Howl({
 });
 
 const tacoBell = new Howl({
-  src: ['/sounds/tacobell.webm'],
+  src: ['/sounds/tacobell.mp3'],
 });
 
 const AAUUGGHH = new Howl({
-  src: ['/sounds/aughhhhh.webm'],
+  src: ['/sounds/aughhhhh.mp3'],
 });
 
 function App(){
