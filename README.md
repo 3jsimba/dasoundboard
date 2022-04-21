@@ -48,4 +48,5 @@ Deployment of the working application. Orginially made with 3 sounds, the applic
 Big fixes
 
 ### Ver. 1.0.3
-yes
+Made Mobile Friendly
+Fixed issues with styling and usage on mobile devices
