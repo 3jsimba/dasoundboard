@@ -1,5 +1,5 @@
 {
-  "sounds":[
+  "soundData":[
 
     {"name": "tag", "src": "/sounds/producertag.mp3"},
     {"name": "tacoBell", "src": "/sounds/tacobell.mp3"},
