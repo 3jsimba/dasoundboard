@@ -1,0 +1,9 @@
+{
+  "sounds":[
+
+    {"name": "tag", "src": "/sounds/producertag.mp3"},
+    {"name": "tacoBell", "src": "/sounds/tacobell.mp3"},
+    {"name": "AAUUGGHH", "src": "/sounds/aughhhhh.mp3"}
+
+  ]      
+}
