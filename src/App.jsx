@@ -53,7 +53,7 @@ function App(){
               </Card.Text>
               {/* <Button onClick={() => seori.play()} variant="dark">play</Button> */}
 
-          <Button onClick={ brainded moment } variant="dark">play</Button>
+              <Button onClick={() => sounds[0].sound.play()} variant="dark">play</Button>
 
               </Card.Body>
             </Card> 
@@ -65,7 +65,11 @@ function App(){
               <Card.Title>taco bell</Card.Title>
               <Card.Text>
               </Card.Text>
-              <Button onClick={() => tacoBell.play()} variant="dark">play</Button>
+
+              {/* <Button onClick={() => tacoBell.play()} variant="dark">play</Button> */}
+
+              <Button onClick={() => sounds[1].sound.play()} variant="dark">play</Button>
+
               </Card.Body>
             </Card>
           </div>
@@ -76,7 +80,11 @@ function App(){
               <Card.Title>AAUUGGHH</Card.Title>
               <Card.Text>
               </Card.Text>
-              <Button onClick={() => AAUUGGHH.play()} variant="dark">play</Button>
+
+              {/* <Button onClick={() => AAUUGGHH.play()} variant="dark">play</Button> */}
+
+              <Button onClick={() => sounds[2].sound.play()} variant="dark">play</Button>
+
               </Card.Body>
             </Card>
           </div>
