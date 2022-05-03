@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import { Card, Button } from 'react-bootstrap';
 import { Howl } from 'howler';
-import { soundData } from './sounds.json';
+import soundData from './sounds.json';
+
 
 // const seori = new Howl({
 //   src: ['/sounds/producertag.mp3'],
