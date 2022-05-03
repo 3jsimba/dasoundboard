@@ -4,21 +4,6 @@ import { Card, Button } from 'react-bootstrap';
 import { Howl } from 'howler';
 import soundData from './sounds.json';
 
-
-// const seori = new Howl({
-//   src: ['/sounds/producertag.mp3'],
-// });
-
-// const tacoBell = new Howl({
-//   src: ['/sounds/tacobell.mp3'],
-// });
-
-// const AAUUGGHH = new Howl({
-//   src: ['/sounds/aughhhhh.mp3'],
-// });
-
-
-
 const sounds = soundData.map(sound => {
   return {
     ...sound,
@@ -27,8 +12,6 @@ const sounds = soundData.map(sound => {
     }),
   };
 });
-
-
 
 function App(){
 
@@ -52,7 +35,6 @@ function App(){
               <Card.Title>tag</Card.Title>
               <Card.Text>
               </Card.Text>
-              {/* <Button onClick={() => seori.play()} variant="dark">play</Button> */}
 
               <Button onClick={() => sounds[0].sound.play()} variant="dark">play</Button>
 
@@ -67,8 +49,6 @@ function App(){
               <Card.Text>
               </Card.Text>
 
-              {/* <Button onClick={() => tacoBell.play()} variant="dark">play</Button> */}
-
               <Button onClick={() => sounds[1].sound.play()} variant="dark">play</Button>
 
               </Card.Body>
@@ -81,8 +61,6 @@ function App(){
               <Card.Title>AAUUGGHH</Card.Title>
               <Card.Text>
               </Card.Text>
-
-              {/* <Button onClick={() => AAUUGGHH.play()} variant="dark">play</Button> */}
 
               <Button onClick={() => sounds[2].sound.play()} variant="dark">play</Button>
 
