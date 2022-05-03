@@ -13,7 +13,7 @@ code {
 }
 
 /* add publc sans as a font famliy */
-@font-face{
+@font-face {
   font-family: 'Public Sans';
-  src: url('D:\code\daboard\src\components\fonts\publicSans\fonts\ttf\PublicSans-BlackItalic.ttf');
+  src: url('./fonts/publicSans/PublicSans-BlackItalic.ttf');
 }
