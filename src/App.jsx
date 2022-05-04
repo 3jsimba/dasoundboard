@@ -194,7 +194,7 @@ function App(){
       </div>
 
       <footer className='footer'>
-        <p className='footerText'> Verions 1.0.4 </p>
+        <p className='footerText'> Verions 1.0.5 </p>
       </footer>
     </>
   );
