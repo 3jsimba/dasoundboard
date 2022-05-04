@@ -4,13 +4,20 @@ import { Card, Button } from 'react-bootstrap';
 import { Howl } from 'howler';
 import soundData from './sounds.json';
 
-const sounds = soundData.map(sound => {
+const sounds = soundData.soundData.map(sound => {
   return {
     ...sound,
     sound: new Howl({
       src: [sound.src],
-    }),
-  };
+      volume: sound.volume,
+      preload: true,
+      autoplay: false,
+      loop: false,
+      onplay: () => {
+        console.log('playing');
+      } 
+    })  
+  } 
 });
 
 function App(){
@@ -30,6 +37,7 @@ function App(){
         <div className="row">
         
           <div className= "col">
+
             <Card border='white' className='card' style={{ width: '10rem' }}>
               <Card.Body>
               <Card.Title>tag</Card.Title>
@@ -40,6 +48,7 @@ function App(){
 
               </Card.Body>
             </Card> 
+            
           </div>
 
           <div className= "col">
