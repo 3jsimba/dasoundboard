@@ -3,6 +3,14 @@
 
     {"name": "tag", "src": "/sounds/producertag.mp3"},
     {"name": "tacoBell", "src": "/sounds/tacobell.mp3"},
-    {"name": "AAUUGGHH", "src": "/sounds/aughhhhh.mp3"}
+    {"name": "AAUUGGHH", "src": "/sounds/aughhhhh.mp3"},
+    {"name": "bruh", "src": "/sounds/bruh.mp3"},
+    {"name": "android", "src": "/sounds/android.mp3"},
+    {"name": "fart", "src": "/sounds/fart.mp3"},
+    {"name": "fartReverb", "src": "/sounds/fartReverb.mp3"}, 
+    {"name": "grubbin", "src": "/sounds/grubbin.mp3"},
+    {"name": "throatGoat", "src": "/sounds/throatGoat.mp3"},
+    {"name": "vine", "src": "/sounds/vine.mp3"}
+
   ]
 }
