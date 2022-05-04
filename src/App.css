@@ -50,6 +50,7 @@
   color: white; 
   text-align: center;
   font-family: Public Sans;
+  margin-top: 1rem;
 }
 
 .card{
@@ -73,4 +74,8 @@
   color: white;
   font-family: Public Sans;
   font-size: 0.75rem;
+}
+
+.container{
+  margin-top: 3rem;
 }

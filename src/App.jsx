@@ -24,16 +24,61 @@ function App(){
 
   return(
     <>
-      <br></br>
       <div className="title">
         <h1>
           Da Soundboard
         </h1>
       </div>
 
-      <br></br><br></br>
 
       <div className="container">
+        <div className="row">
+        
+          <div className= "col">
+
+            <Card border='white' className='card' style={{ width: '10rem' }}>
+              <Card.Body>
+              <Card.Title>tag</Card.Title>
+              <Card.Text>
+              </Card.Text>
+
+              <Button onClick={() => sounds[0].sound.play()} variant="dark">play</Button>
+
+              </Card.Body>
+            </Card> 
+            
+          </div>
+
+          <div className= "col">
+            <Card border='white' className='card' style={{ width: '10rem' }}>
+              <Card.Body>
+              <Card.Title>taco bell</Card.Title>
+              <Card.Text>
+              </Card.Text>
+
+              <Button onClick={() => sounds[1].sound.play()} variant="dark">play</Button>
+
+              </Card.Body>
+            </Card>
+          </div>
+          
+          <div className= "col">
+            <Card border='white' className='card' style={{ width: '10rem' }}>
+              <Card.Body>
+              <Card.Title>AAUUGGHH</Card.Title>
+              <Card.Text>
+              </Card.Text>
+
+              <Button onClick={() => sounds[2].sound.play()} variant="dark">play</Button>
+
+              </Card.Body>
+            </Card>
+          </div>
+
+        </div>
+
+        <br></br>
+        
         <div className="row">
         
           <div className= "col">
