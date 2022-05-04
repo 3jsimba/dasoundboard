@@ -85,11 +85,11 @@ function App(){
 
             <Card border='white' className='card' style={{ width: '10rem' }}>
               <Card.Body>
-              <Card.Title>tag</Card.Title>
+              <Card.Title>bruh</Card.Title>
               <Card.Text>
               </Card.Text>
 
-              <Button onClick={() => sounds[0].sound.play()} variant="dark">play</Button>
+              <Button onClick={() => sounds[3].sound.play()} variant="dark">play</Button>
 
               </Card.Body>
             </Card> 
@@ -99,11 +99,11 @@ function App(){
           <div className= "col">
             <Card border='white' className='card' style={{ width: '10rem' }}>
               <Card.Body>
-              <Card.Title>taco bell</Card.Title>
+              <Card.Title>andoird</Card.Title>
               <Card.Text>
               </Card.Text>
 
-              <Button onClick={() => sounds[1].sound.play()} variant="dark">play</Button>
+              <Button onClick={() => sounds[4].sound.play()} variant="dark">play</Button>
 
               </Card.Body>
             </Card>
@@ -112,16 +112,84 @@ function App(){
           <div className= "col">
             <Card border='white' className='card' style={{ width: '10rem' }}>
               <Card.Body>
-              <Card.Title>AAUUGGHH</Card.Title>
+              <Card.Title>fart</Card.Title>
               <Card.Text>
               </Card.Text>
 
-              <Button onClick={() => sounds[2].sound.play()} variant="dark">play</Button>
+              <Button onClick={() => sounds[5].sound.play()} variant="dark">play</Button>
 
               </Card.Body>
             </Card>
           </div>
 
+        </div>
+        
+        <br></br>
+        
+        <div className="row">
+        
+          <div className= "col">
+
+            <Card border='white' className='card' style={{ width: '10rem' }}>
+              <Card.Body>
+              <Card.Title>reverbed fart</Card.Title>
+              <Card.Text>
+              </Card.Text>
+
+              <Button onClick={() => sounds[6].sound.play()} variant="dark">play</Button>
+
+              </Card.Body>
+            </Card> 
+            
+          </div>
+
+          <div className= "col">
+            <Card border='white' className='card' style={{ width: '10rem' }}>
+              <Card.Body>
+              <Card.Title>grubbin</Card.Title>
+              <Card.Text>
+              </Card.Text>
+
+              <Button onClick={() => sounds[7].sound.play()} variant="dark">play</Button>
+
+              </Card.Body>
+            </Card>
+          </div>
+          
+          <div className= "col">
+            <Card border='white' className='card' style={{ width: '10rem' }}>
+              <Card.Body>
+              <Card.Title>throat goat</Card.Title>
+              <Card.Text>
+              </Card.Text>
+
+              <Button onClick={() => sounds[8].sound.play()} variant="dark">play</Button>
+
+              </Card.Body>
+            </Card>
+          </div>
+
+        </div>
+        
+        <br></br>
+
+        <div className="row">
+        
+          <div className= "col">
+
+            <Card border='white' className='card' style={{ width: '10rem' }}>
+              <Card.Body>
+              <Card.Title>vine</Card.Title>
+              <Card.Text>
+              </Card.Text>
+
+              <Button onClick={() => sounds[9].sound.play()} variant="dark">play</Button>
+
+              </Card.Body>
+            </Card> 
+            
+          </div>
+        
         </div>
       </div>
 
