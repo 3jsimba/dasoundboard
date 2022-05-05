@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import { Card, Button } from 'react-bootstrap';
+// import { Card, Button } from 'react-bootstrap';
 import { Howl } from 'howler';
 import soundData from './sounds.json';
+import Card from './components/Card.jsx';
 
 const sounds = soundData.soundData.map(sound => {
   return {
@@ -31,7 +32,7 @@ function App(){
       </div>
 
 
-      <div className="container">
+      {/* <div className="container">
         <div className="row">
         
           <div className= "col">
@@ -190,6 +191,14 @@ function App(){
             
           </div>
         
+        </div>
+      </div> */}
+
+      <div className="container">
+        <div className="row">
+          <div className= "col">
+            <Card title="tag" howlClass={sounds[0].sound.play()} />
+          </div>
         </div>
       </div>
 
