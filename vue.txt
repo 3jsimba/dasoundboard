@@ -1,0 +1,29 @@
+<script>
+import { ref } from 'vue'
+  
+ export default{
+   data(){
+     return{
+     		vruh: "template",
+       	msg: ''
+   		}
+   }
+ }
+
+</script>
+
+<template>
+  
+  <div v-bind:class = "vruh">
+      <h1>{{ msg }}</h1>
+  	<input v-model="msg">
+  </div>
+
+</template>
+
+<style>
+  .template{
+    background-color: black;
+  }
+  
+</style>
