@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-// import { Card, Button } from 'react-bootstrap';
 import { Howl } from 'howler';
 import soundData from './sounds.json';
 import Card from './components/Card.jsx';
@@ -31,175 +30,55 @@ function App(){
         </h1>
       </div>
 
-
-      {/* <div className="container">
-        <div className="row">
-        
-          <div className= "col">
-
-            <Card border='white' className='card' style={{ width: '10rem' }}>
-              <Card.Body>
-              <Card.Title>tag</Card.Title>
-              <Card.Text>
-              </Card.Text>
-
-              <Button onClick={() => sounds[0].sound.play()} variant="dark">play</Button>
-
-              </Card.Body>
-            </Card> 
-            
-          </div>
-
-          <div className= "col">
-            <Card border='white' className='card' style={{ width: '10rem' }}>
-              <Card.Body>
-              <Card.Title>taco bell</Card.Title>
-              <Card.Text>
-              </Card.Text>
-
-              <Button onClick={() => sounds[1].sound.play()} variant="dark">play</Button>
-
-              </Card.Body>
-            </Card>
-          </div>
-          
-          <div className= "col">
-            <Card border='white' className='card' style={{ width: '10rem' }}>
-              <Card.Body>
-              <Card.Title>AAUUGGHH</Card.Title>
-              <Card.Text>
-              </Card.Text>
-
-              <Button onClick={() => sounds[2].sound.play()} variant="dark">play</Button>
-
-              </Card.Body>
-            </Card>
-          </div>
-
-        </div>
-
-        <br></br>
-        
-        <div className="row">
-        
-          <div className= "col">
-
-            <Card border='white' className='card' style={{ width: '10rem' }}>
-              <Card.Body>
-              <Card.Title>bruh</Card.Title>
-              <Card.Text>
-              </Card.Text>
-
-              <Button onClick={() => sounds[3].sound.play()} variant="dark">play</Button>
-
-              </Card.Body>
-            </Card> 
-            
-          </div>
-
-          <div className= "col">
-            <Card border='white' className='card' style={{ width: '10rem' }}>
-              <Card.Body>
-              <Card.Title>andoird</Card.Title>
-              <Card.Text>
-              </Card.Text>
-
-              <Button onClick={() => sounds[4].sound.play()} variant="dark">play</Button>
-
-              </Card.Body>
-            </Card>
-          </div>
-          
-          <div className= "col">
-            <Card border='white' className='card' style={{ width: '10rem' }}>
-              <Card.Body>
-              <Card.Title>fart</Card.Title>
-              <Card.Text>
-              </Card.Text>
-
-              <Button onClick={() => sounds[5].sound.play()} variant="dark">play</Button>
-
-              </Card.Body>
-            </Card>
-          </div>
-
-        </div>
-        
-        <br></br>
-        
-        <div className="row">
-        
-          <div className= "col">
-
-            <Card border='white' className='card' style={{ width: '10rem' }}>
-              <Card.Body>
-              <Card.Title>reverbed fart</Card.Title>
-              <Card.Text>
-              </Card.Text>
-
-              <Button onClick={() => sounds[6].sound.play()} variant="dark">play</Button>
-
-              </Card.Body>
-            </Card> 
-            
-          </div>
-
-          <div className= "col">
-            <Card border='white' className='card' style={{ width: '10rem' }}>
-              <Card.Body>
-              <Card.Title>grubbin</Card.Title>
-              <Card.Text>
-              </Card.Text>
-
-              <Button onClick={() => sounds[7].sound.play()} variant="dark">play</Button>
-
-              </Card.Body>
-            </Card>
-          </div>
-          
-          <div className= "col">
-            <Card border='white' className='card' style={{ width: '10rem' }}>
-              <Card.Body>
-              <Card.Title>throat goat</Card.Title>
-              <Card.Text>
-              </Card.Text>
-
-              <Button onClick={() => sounds[8].sound.play()} variant="dark">play</Button>
-
-              </Card.Body>
-            </Card>
-          </div>
-
-        </div>
-        
-        <br></br>
-
-        <div className="row">
-        
-          <div className= "col">
-
-            <Card border='white' className='card' style={{ width: '10rem' }}>
-              <Card.Body>
-              <Card.Title>vine</Card.Title>
-              <Card.Text>
-              </Card.Text>
-
-              <Button onClick={() => sounds[9].sound.play()} variant="dark">play</Button>
-
-              </Card.Body>
-            </Card> 
-            
-          </div>
-        
-        </div>
-      </div> */}
-
       <div className="container">
         <div className="row">
           <div className= "col">
-            <Card title="tag" howlClass={sounds[0].sound.play()} />
+            <Card title={soundData.soundData[0].name} howlClass={sounds[0]} />
+          </div>
+          <div className= "col">
+            <Card title={soundData.soundData[1].name} howlClass={sounds[1]} />
+          </div>
+          <div className= "col">
+            <Card title={soundData.soundData[2].name} howlClass={sounds[2]} />
           </div>
         </div>
+
+        <br></br>
+
+        <div className="row">
+          <div className= "col">
+            <Card title={soundData.soundData[3].name} howlClass={sounds[3]} />
+          </div>
+          <div className= "col">
+            <Card title={soundData.soundData[4].name} howlClass={sounds[4]} />
+          </div>
+          <div className= "col">
+            <Card title={soundData.soundData[5].name} howlClass={sounds[5]} />
+          </div>
+        </div>
+        
+        <br></br>
+
+        <div className="row">
+          <div className= "col">
+            <Card title={soundData.soundData[6].name} howlClass={sounds[6]} />
+          </div>
+          <div className= "col">
+            <Card title={soundData.soundData[7].name} howlClass={sounds[7]} />
+          </div>
+          <div className= "col">
+            <Card title={soundData.soundData[8].name} howlClass={sounds[8]} />
+          </div>
+        </div>
+
+        <br></br>
+
+        <div className="row">
+          <div className= "col">
+            <Card title={soundData.soundData[9].name} howlClass={sounds[9]} />
+          </div>
+        </div>
+
       </div>
 
       <footer className='footer'>
