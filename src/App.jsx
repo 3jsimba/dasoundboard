@@ -10,7 +10,6 @@ const sounds = soundData.soundData.map(sound => {
     sound: new Howl({
       src: [sound.src],
       volume: sound.volume,
-      preload: true,
       autoplay: false,
       loop: false,
       onplay: () => {
